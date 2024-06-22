@@ -1,0 +1,36 @@
+/* Basic layout styles for the semantic HTML structure */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, aside, footer {
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin: 1em;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    display: block; /* Ensuring it's a block-level element */
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+}
