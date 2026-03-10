@@ -1,0 +1,150 @@
+/* --- Global Variables & Typography --- */
+:root {
+    --primary-color: #a8124b; /* Deeper Raspberry Pink (Passes AA contrast) */
+    --secondary-color: #900f3e; /* Darker Pink for nav (Passes AA contrast) */
+    --accent-color: #ffb3c6; /* Pastel pink for hover effects */
+    --text-light: #ffffff; /* White text */
+    --text-dark: #4a001f; /* Dark burgundy for body text */
+}
+body {
+    /* This applies regular Poppins to all your normal paragraph text */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+
+h1, h2, h3, #course-title {
+    /* This applies semi-bold Montserrat to your titles */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem 0 0 0;
+}
+
+/* display: block */
+header span#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* CSS Flex on Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 0.8rem;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect without layout shift */
+nav a:hover {
+    color: var(--accent-color); 
+}
+
+
+/* Limited width and centered horizontally */
+main {
+    max-width: 900px;
+    margin: 2rem auto; 
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Layout cards using CSS Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Makes the left card wider than the right card */
+    gap: 2rem;
+}
+
+/* --- Card Styling --- */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Using Flexbox inside the cards to align images and text */
+.card-content {
+    padding: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.card-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card-content figure {
+    margin: 0;
+    text-align: center;
+}
+
+.card-content figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.card ul {
+    padding: 1rem 2rem;
+    line-height: 1.6;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer #lastModified {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
