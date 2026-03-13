@@ -145,6 +145,6 @@ footer p {
 }
 
 footer #lastModified {
-    color: var(--accent-color);
+    color: var(--text-light); /* This is the fix */
     font-size: 0.9rem;
 }
