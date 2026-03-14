@@ -24,8 +24,10 @@ header {
     justify-content: space-between;
 }
 
-h1 {
+/* Updated selector to match the new HTML div class */
+.logo {
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
 #menu {
@@ -65,7 +67,7 @@ main {
     padding: 2rem 1rem;
 }
 
-h2 {
+h1 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--text-dark);
@@ -82,7 +84,6 @@ figure {
     text-align: center;
 }
 
-/* THE FIX: This forces every image into a perfect 400x250 shape */
 figure img {
     width: 100%;
     height: auto;
