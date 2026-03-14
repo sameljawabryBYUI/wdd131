@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #4a148c; 
+    --text-dark: #000000;
+    --font-main: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none; 
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#nav-menu.open {
+    display: flex;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#nav-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-size: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+/* THE FIX: This forces every image into a perfect 400x250 shape */
+figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10; 
+    object-fit: cover;     
+    display: block;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+}

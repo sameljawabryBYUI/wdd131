@@ -1,0 +1,26 @@
+@media (min-width: 48rem) {
+    header {
+        flex-wrap: nowrap; 
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    #nav-menu {
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    #nav-menu a {
+        padding: 0.5rem 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}

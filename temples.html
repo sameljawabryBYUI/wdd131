@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Samar Abbas - WDD 131</title>
+    <meta name="description" content="Temple Album project for WDD 131 by Samar Abbas.">
+    <meta name="author" content="Samar Abbas">
+    
+    <link rel="preload" href="images/bahia-blanca-argentina.webp" as="image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 48rem)">
+    
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" title="Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/bahia-blanca-argentina.webp" alt="Bahia Blanca Argentina Temple" loading="eager" width="400" height="250">
+                <figcaption>Bahía Blanca Argentina</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/helsinki-finland.webp" alt="Helsinki Finland Temple" loading="lazy" width="400" height="250">
+                <figcaption>Helsinki Finland</figcaption>
+            </figure>
+            <figure>
+                <img src="images/madrid-spain.webp" alt="Madrid Spain Temple" loading="lazy" width="400" height="250">
+                <figcaption>Madrid Spain</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris-france.webp" alt="Paris France Temple" loading="lazy" width="400" height="250">
+                <figcaption>Paris France</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-italy.webp" alt="Rome Italy Temple" loading="lazy" width="400" height="250">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/st-george-utah.webp" alt="St. George Utah Temple" loading="lazy" width="400" height="250">
+                <figcaption>St. George Utah USA</figcaption>
+            </figure>
+            <figure>
+                <img src="images/stockholm-sweden.webp" alt="Stockholm Sweden Temple" loading="lazy" width="400" height="250">
+                <figcaption>Stockholm Sweden</figcaption>
+            </figure>
+            <figure>
+                <img src="images/barcelona-spain.webp" alt="Barcelona Spain Temple Rendering" loading="lazy" width="400" height="250">
+                <figcaption>Barcelona Spain</figcaption>
+            </figure>
+            <figure>
+                <img src="images/budapest-hungary.webp" alt="Budapest Hungary Temple Rendering" loading="lazy" width="400" height="250">
+                <figcaption>Budapest Hungary</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌺 Samar Abbas 🌺 Paris France</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
