@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris, France | WDD 131</title>
+    <meta name="description" content="WDD 131 Country Page assignment featuring Paris, France.">
+    <meta name="author" content="Samar Abbas">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Paris, France</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/paris-large.webp" media="(min-width: 768px)">
+                <img src="images/paris-small.webp" alt="The Eiffel Tower in Paris" width="500" height="800" loading="lazy">
+            </picture>
+            
+            <section class="data-card">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 105 sq km</p>
+                <p><strong>Population:</strong> 2,102,650</p>
+                <p><strong>Capital:</strong> Paris</p>
+                <p><strong>Languages:</strong> French</p>
+                <p><strong>Currency:</strong> Euro (€)</p>
+                <p><strong>Time Zone:</strong> UTC+1</p>
+                <p><strong>Calling Code:</strong> +33</p>
+                <p><strong>Internet TLD:</strong> .fr</p>
+            </section>
+            
+            <section class="weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <img id="hide-this-cloud" src="images/weather-icon.svg" alt="Cloudy weather icon" width="60" height="60">
+                
+                <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+                <p><strong>Conditions:</strong> Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind">15</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⚜️ Samar Abbas ⚜️ Paris</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
