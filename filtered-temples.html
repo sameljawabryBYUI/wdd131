@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album - Samar Abbas - WDD 131</title>
+    <meta name="description" content="An enhanced and filtered Temple Album gallery project created for WDD 131 by Samar Abbas.">
+    <meta name="author" content="Samar Abbas">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 48rem)">
+    
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Temple Album</div>
+        <button id="menu" title="Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="#" id="nav-home" class="active">Home</a>
+            <a href="#" id="nav-old">Old</a>
+            <a href="#" id="nav-new">New</a>
+            <a href="#" id="nav-large">Large</a>
+            <a href="#" id="nav-small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="gallery-title">Home</h1>
+        
+        <div class="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌺 Samar Abbas 🌺 Paris France</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

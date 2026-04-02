@@ -1,0 +1,144 @@
+:root {
+    /* Using the original dark purple for headers, but black for body text */
+    --primary-color: #4a148c; 
+    --text-dark: #000000;
+    --font-main: 'Roboto', sans-serif;
+    /* Adding new variables for the card design */
+    --card-bg: #f0f0f0; /* Light gray background for cards */
+    --card-border: #ddd;
+    --card-label: #333; /* For labels like 'Location:' */
+    --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none; 
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#nav-menu.open {
+    display: flex;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#nav-menu a:hover,
+#nav-menu a.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-size: 2.2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile view: 1 column */
+    gap: 2rem;
+}
+
+/* --- Phase 3 & 4: New Card Styling based on image_0.png --- */
+.temple-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple-card h3 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.temple-card p {
+    color: var(--text-dark);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+}
+
+/* Specific styling for data labels (e.g., "Location:") */
+.temple-card .card-label {
+    font-weight: normal;
+    color: var(--card-label);
+}
+
+.temple-card img {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    /* Aspect ratio ensures the placeholder space is correct for lazy loading */
+    aspect-ratio: 400 / 250; 
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+/* --- End New Card Styling --- */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
