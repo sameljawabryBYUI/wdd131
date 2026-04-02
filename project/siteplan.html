@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Maison Rouri</title>
+    <meta name="author" content="Samar">
+    <meta name="description" content="Site plan for the Maison Rouri European fashion website project.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        /* * COLOR SCHEME:
+         * Primary Background: #FAF9F6 (Off-White/Ivory)
+         * Primary Text/Headings: #1B263B (Royal Navy Blue)
+         * Accents/Links: #D4AF37 (Metallic Gold)
+         */
+
+        :root {
+            --bg-color: #FAF9F6;
+            --text-color: #1B263B;
+            --accent-color: #D4AF37;
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h2, h3 {
+            font-family: var(--heading-font);
+            color: var(--text-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        .wireframe-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maison Rouri</h1>
+        <p>Website Planning Document</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name & Branding</h2>
+            <p><strong>Site Name:</strong> Maison Rouri</p>
+            <p><strong>Reasoning:</strong> "Maison" gives an immediate nod to classic French fashion houses, while "Rouri" adds a unique, personal signature. The name sets a tone of timeless, European-inspired elegance, perfectly capturing the site's focus on chic, understated style inspired by icons like Princess Diana.</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site serves as a styling guide for building a European-inspired capsule wardrobe. It will feature curated galleries of essential pieces—from structured blazers for wandering Paris to flattering swimwear and sarongs for Mediterranean getaways. The site aims to help users capture that effortless, royal elegance with fewer, high-quality items.</p>
+        </section>
+
+        <section>
+            <h2>Target Audience Scenarios</h2>
+            <p>These are the core questions from our target audience that the website will answer:</p>
+            <ul>
+                <li>"How can I build a versatile, travel-friendly capsule wardrobe for a week-long trip to Europe this May without overpacking?"</li>
+                <li>"What are the key elements of Princess Diana's casual street style that I can incorporate into my everyday wardrobe?"</li>
+                <li>"How do I choose the most flattering swimwear and cover-ups that match a chic, European aesthetic?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <p>The color palette is inspired by classic European tailoring and royal fashion.</p>
+            <ul>
+                <li>
+                    <span class="color-box" style="background-color: #1B263B;"></span>
+                    <strong>Royal Navy Blue (#1B263B):</strong> Used for primary text, headings, and the header background. It is a staple of Parisian chic and reminiscent of Princess Diana's iconic sapphire blue.
+                </li>
+                <li>
+                    <span class="color-box" style="background-color: #FAF9F6;"></span>
+                    <strong>Ivory (#FAF9F6):</strong> Used as the primary background color. It provides a softer, more luxurious canvas than stark white.
+                </li>
+                <li>
+                    <span class="color-box" style="background-color: #D4AF37;"></span>
+                    <strong>Metallic Gold (#D4AF37):</strong> Used for accents, borders, and interactive elements. It adds a touch of high-end, European boutique elegance.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>The typography pairs a high-fashion serif with a modern, clean sans-serif.</p>
+            <ul>
+                <li><strong>Headings:</strong> <em>Playfair Display</em>. Used for the site title and all major headings. Its elegant, high-contrast strokes resemble the typography found in European fashion magazines like Vogue.</li>
+                <li><strong>Body Text:</strong> <em>Montserrat</em>. Used for paragraphs and lists. It is a geometric sans-serif that provides a very clean, readable, and modern contrast to the decorative headings.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>Below are the layout representations for the Home Page in both Mobile and Desktop views.</p>
+            <div class="wireframe-container">
+                <div>
+                    <h3>Mobile View</h3>
+                    <img src="images/wireframe-mobile.png" alt="Sketch of mobile homepage layout">
+                </div>
+                <div>
+                    <h3>Desktop View</h3>
+                    <img src="images/wireframe-desktop.png" alt="Sketch of desktop homepage layout">
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
