@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form for WDD131">
+    <meta name="description" content="A comprehensive Product Review Form for WDD131 students to practice form validation and local storage.">
+    <meta name="author" content="Samar Abbas">
     <title>Product Review Form</title>
     
     <link rel="stylesheet" href="styles/styles.css">
@@ -28,11 +29,20 @@
                 <div class="form-group">
                     <label>Overall Rating <span class="required">*</span></label>
                     <div class="rating">
-                        <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
-                        <label><input type="radio" name="rating" value="2" required> 2 ☆</label>
-                        <label><input type="radio" name="rating" value="3" required> 3 ☆</label>
-                        <label><input type="radio" name="rating" value="4" required> 4 ☆</label>
-                        <label><input type="radio" name="rating" value="5" required> 5 ☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <label for="star1">1 ☆</label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        <label for="star2">2 ☆</label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        <label for="star3">3 ☆</label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        <label for="star4">4 ☆</label>
+                        
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">5 ☆</label>
                     </div>
                 </div>
 
@@ -48,10 +58,17 @@
                 <div class="form-group">
                     <label>Which features did you find useful? (Check all that apply)</label>
                     <div class="checkbox-group">
-                        <label><input type="checkbox" name="feature" value="durability"> Durability</label>
-                        <label><input type="checkbox" name="feature" value="ease-of-use"> Ease of Use</label>
-                        <label><input type="checkbox" name="feature" value="performance"> Performance</label>
-                        <label><input type="checkbox" name="feature" value="design"> Design</label>
+                        <input type="checkbox" id="feat-durability" name="feature" value="durability">
+                        <label for="feat-durability">Durability</label>
+
+                        <input type="checkbox" id="feat-ease" name="feature" value="ease-of-use">
+                        <label for="feat-ease">Ease of Use</label>
+
+                        <input type="checkbox" id="feat-perf" name="feature" value="performance">
+                        <label for="feat-perf">Performance</label>
+
+                        <input type="checkbox" id="feat-design" name="feature" value="design">
+                        <label for="feat-design">Design</label>
                     </div>
                 </div>
 
@@ -70,7 +87,7 @@
         </form>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Sam | WDD131</p>
+        <p>&copy; <span id="currentyear"></span> | Samar Abbas | WDD131</p>
         <p id="lastModified"></p>
     </footer>
 </body>
