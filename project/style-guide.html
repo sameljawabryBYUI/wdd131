@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide | Maison Rouri</title>
+    <meta name="description" content="Contact a Maison Rouri stylist for personalized European wardrobe advice.">
+    <meta name="author" content="Samar Abbas">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MAISON ROURI</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="essentials.html">Essentials</a></li>
+                <li><a href="style-guide.html">Style Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Consult a Stylist</h2>
+        <p>Planning a trip to the Mediterranean or a weekend in Paris? Let our stylists help you pack perfectly.</p>
+
+        <form class="stylist-form" method="get" action="record.html">
+            <div class="form-group">
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Upcoming Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris, France</option>
+                    <option value="mallorca">Palma de Mallorca, Spain</option>
+                    <option value="amalfi">Amalfi Coast, Italy</option>
+                    <option value="london">London, UK</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Styling Needs:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Style Guide</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Maison Rouri | Samar Abbas | <a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

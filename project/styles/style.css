@@ -1,0 +1,160 @@
+:root {
+    --bg-color: #FAF9F6;
+    --text-color: #1B263B;
+    --accent-color: #D4AF37;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Navigation & Header --- */
+header {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.nav-links a {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Main Layout --- */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+/* --- CSS Grid: Responsive Layout --- */
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 column */
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.category-card, .card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.category-card img, .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Desktop View: 4 Columns */
+@media (min-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* --- Buttons & Forms --- */
+button {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    font-family: var(--body-font);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.stylist-form {
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: var(--body-font);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+footer a {
+    color: var(--accent-color);
+}
